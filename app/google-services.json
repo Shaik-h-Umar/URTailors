@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "610812410678",
+    "project_id": "urtailorsog",
+    "storage_bucket": "urtailorsog.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610812410678:android:c46606a906af3ade1a5197",
+        "android_client_info": {
+          "package_name": "com.example.urtailorog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACOzHwD8bnI_eE7K5IDMh1fYpD3zQKVgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

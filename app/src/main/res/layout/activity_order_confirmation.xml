@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Top Yellow Bar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FBEA57"/>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <!-- Order Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Confirmation"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp"/>
+
+            <!-- Tailor Info Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tailor Information"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tailor Name:"
+                android:id="@+id/tailorName"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tailor Contact:"
+                android:id="@+id/tailorPhone"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+
+
+            <!-- Order Details Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Order Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product:"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Measurements"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+
+            <!-- Measurements Grid -->
+            <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="2" android:rowCount="7">
+                <TextView android:id="@+id/arm" android:text="Arm:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/fullChest" android:text="Full Chest:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/fullShoulder" android:text="Full Shoulder:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/neck" android:text="Neck:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/sleeve" android:text="Sleeve:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/bicep" android:text="Bicep:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/wrist" android:text="Wrist:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/waist" android:text="Waist/Stomach:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/hips" android:text="Hips/Seat:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/frontLength" android:text="Front Length:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/frontChest" android:text="Front Chest:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/backWidth" android:text="Back Width:" android:textColor="@color/black"/>
+                <TextView android:id="@+id/fullSleeve" android:text="Full Sleeve:" android:textColor="@color/black"/>
+            </GridLayout>
+
+            <!-- Tailor Message Section -->
+            <TextView
+                android:id="@+id/measurementMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tailor will arrive to take measurements."
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"/>
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FBEA57"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_nav"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/home2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/orderic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orders"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profile_nav"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/profile2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/setting_nev"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/setting"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setting"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

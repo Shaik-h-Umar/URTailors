@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FCE300"
+    android:padding="20dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/tailor"
+        android:contentDescription="URTAILORS Logo"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Sign Up Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Enter Email"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Show Password Checkbox -->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show password"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="100dp"
+        android:textColor="@color/black"
+        android:id="@+id/showPasswordCheckbox"/>
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/signIn_user_Btn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="#FFF"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Create Account Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't Have an Account? Create an Account"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/signUp_user_Btn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#FFF"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Sign in as Tailor -->
+    <TextView
+        android:id="@+id/signup_tailor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Using for Business? Sign in as Tailor"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:textColor="#0028F4"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

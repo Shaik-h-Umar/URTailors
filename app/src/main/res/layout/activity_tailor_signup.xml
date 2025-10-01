@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCE300"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/tailor"
+            android:contentDescription="Sewing Machine Logo" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URTAILORS"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up as a Tailor"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/tailor_editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/tailor_editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Gmail"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/tailor_editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Re-enter Password Input -->
+        <EditText
+            android:id="@+id/tailor_editTextRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-enter Password"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="10dp"/>
+
+        <!--         Show Password Checkbox -->
+        <CheckBox
+            android:id="@+id/showPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show password"
+            android:textColor="@color/black"
+            android:layout_marginRight="105dp"
+            android:layout_marginTop="10dp"/>
+
+        <!--         Sign Up Button -->
+        <Button
+            android:id="@+id/tailor_Signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Sign Up"
+            android:textColor="@color/white"/>
+
+        <!-- Sign In Link -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account? Sign In"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Sign In Button -->
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>

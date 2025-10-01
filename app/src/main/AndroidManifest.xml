@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/tailor"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.URTailorOG"
+        tools:targetApi="31">
+        <activity
+            android:name=".TrackOrdertailor"
+            android:exported="false" />
+        <activity
+            android:name=".UserDetails"
+            android:exported="false" />
+        <activity
+            android:name=".TailorDetails"
+            android:exported="false" />
+        <activity
+            android:name=".KYCConfirmation"
+            android:exported="false" />
+        <activity
+            android:name=".TailorKyc"
+            android:exported="false" />
+        <activity
+            android:name=".TailorOrderdetails"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateService"
+            android:exported="false" />
+        <activity
+            android:name=".TailorService"
+            android:exported="false" />
+        <activity
+            android:name=".TailorPrivacy"
+            android:exported="false" />
+        <activity
+            android:name=".TailorAppointment"
+            android:exported="false" />
+        <activity
+            android:name=".TailorHelpsupport"
+            android:exported="false" />
+        <activity
+            android:name=".TailorEarnings"
+            android:exported="false" />
+        <activity
+            android:name=".TailorCompletedorder"
+            android:exported="false" />
+        <activity
+            android:name=".TailorProfile"
+            android:exported="false" />
+        <activity
+            android:name=".TailorAllorder"
+            android:exported="false" />
+        <activity
+            android:name=".TailorDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".TailorSignup"
+            android:exported="false" />
+        <activity
+            android:name=".TrackOrder"
+            android:exported="false" />
+        <activity
+            android:name=".Order"
+            android:exported="false" />
+        <activity
+            android:name=".OrderConfirmation"
+            android:exported="false" />
+        <activity
+            android:name=".SetAppointment"
+            android:exported="false" />
+        <activity
+            android:name=".SelfMeasure"
+            android:exported="false" />
+        <activity
+            android:name=".MeasurementSelection"
+            android:exported="false" />
+        <activity
+            android:name=".UserHistoryPage"
+            android:exported="false"
+            android:theme="@style/Theme.URTailorOG" />
+        <activity
+            android:name=".SelectedTailorDetail"
+            android:exported="false" />
+        <activity
+            android:name=".UserSetting"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".UserCurrentPage"
+            android:exported="false" />
+        <activity
+            android:name=".TailorSelection"
+            android:exported="false" />
+        <activity
+            android:name=".TailorSignin"
+            android:exported="false" />
+        <activity
+            android:name=".UserSignup"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

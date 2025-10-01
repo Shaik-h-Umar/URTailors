@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Top Yellow Bar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FBEA57" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Tailor Details"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black" />
+
+        <!-- Tailor Details Form -->
+        <EditText
+            android:id="@+id/tailor_editBusinessName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buisness Name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="20dp"/>
+
+
+        <EditText
+            android:id="@+id/tailor_editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/tailor_editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@android:drawable/edit_text"
+            android:inputType="text"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/tailor_editTextCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/tailor_editTextState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/tailor_editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:hint="Business Description"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="12dp"/>
+
+
+        <Button
+            android:id="@+id/tailor_updateBtn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Add Details"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>
